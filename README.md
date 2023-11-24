@@ -1,4 +1,5 @@
 ### Mercado Liebre
 
-Autor: Laureano Lorenzo
-Descripción del proyecto: Este proyecto consiste en un servidor con un clon (html y CSS) de la popular pagina "Mercado Libre". Su fin es exclusivamente académico.
+* Autor: Laureano Lorenzo
+* Descripción: Este proyecto consiste en un servidor con un clon (visual) de la popular página "Mercado Libre". Sus fines son exclusivamente educativos.
+* URL: [Mercado Liebre](https://ml-laureano-lorenzo.onrender.com/)
