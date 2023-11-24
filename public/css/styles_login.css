@@ -1,0 +1,444 @@
+/*#######Colores########
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+/*
+#######Cortes#######
+Tablet: 361px
+Desktop: 769 px
+*/head
+* {
+    box-sizing: border-box;
+    margin: 0px; /*Sino queda espacio entre el body y el final*/
+    padding: 0px;
+}
+/* BODY */
+
+body {
+    background-color: #ebebeb;
+    font-family: roboto;
+    font-size: 12px;
+    margin : 0px;
+    padding: 0px;
+    max-width: 100%;
+    height: 100%;
+    height: 90vh;
+}
+
+/* HEADER */
+header {
+    background-color: #EAC926;
+    width: 100vw;
+    padding: 16px;
+    position: fixed;
+    top: 0px;
+     /*De Juan!*/
+}
+
+/* Copy header (compra en cuotas) */
+
+.top-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.flex-busqueda {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+}
+.copy-header {
+    font-weight: 400;
+    /* text-align: center;*/ /*Lo aplica en el video pero no queda bien*/
+}
+/* nav bar */
+.nav-bar {  /* No se debe ver en mobile*/
+    display: none; 
+}
+.barra-busqueda {
+    padding-left: 8px;
+    /* display: none; */
+}
+/* LOGO */
+.logo {
+    width: 14em;
+}
+/* .logo img {
+    max-width: 90%;
+} */
+/* ULS adentro del nav bar */
+.nav-bar > ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+.nav-bar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+.fa-magnifying-glass {
+    background-color: #ebebeb;
+    font-size: 1.3em;
+    margin-left: 1px;
+    padding: 2px;
+
+}
+/* Burger Menu */
+.burger-container {
+    height: 48px;
+}
+.burger-menu {
+    display: block;
+    margin: auto auto 0px auto;
+    width: 3.2em;
+    text-align: center;
+    background-color: #1259c3;
+    border-radius: 10%;
+}
+.fa-bars {
+    width: 100%;
+    font-size: 2em;
+    /* padding-left: 0.25em; */ /*No hace falta, porque ya lo arregle con text-align: center en el container padre*/
+    padding: 0.2em 0em;
+}
+/* MAIN */
+main {
+    margin-bottom: 25px;
+    width: 90vw;
+    margin: 80px auto;
+    margin-top: 179px;
+    height: 528px;
+/* Se puede combinar nros con auto */
+}
+/* Section */
+.main-login-section {
+    gap: 24px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 460px;
+    justify-content: center;
+    /* height: 100%; */
+}
+.field, button {
+    height: 4vh;
+    max-width: 432px;
+    width: 100%;
+}
+
+.main-login-section > h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+/* Boton enviar */
+button[type= "submit"] {
+    background-color: #1259c3;
+    font-size: 1em;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: 0px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 4vh;
+    transition: background-color 450ms;
+}
+button[type="submit"]:hover {
+    /* background-color: #0022AA; */
+    background-color: #0022AA;
+}
+
+input:focus {
+    outline : none;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    padding-top: 25px;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    position: relative;
+    bottom: -16px;
+}
+footer section{
+    width: 800%;
+    margin: 0px;
+}
+article { /*NO ES RESPONSIVE ASI*/
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+article p, b{
+    text-align: center;
+}
+article .fa-solid {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    transition: all 450ms;
+    color: #1259c3;
+}
+
+footer .fa-solid:hover {
+    color: #33c9ff;
+    cursor: pointer;
+}
+
+
+article > i{
+    font-size: 2em;
+}
+#copyright {
+    text-align: center;
+}
+
+/* FORM */
+
+
+form {
+    max-width: 952px;
+    margin: auto;
+}
+
+.text-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+form div {
+    font-size: 18px;
+}
+/* Textos */
+.control {
+    height: 4vh;
+    width: 99%;
+    max-width: 100%;
+    margin-right: 0px;
+}
+
+input {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+input[type="text"],input[type="date"],input[type="password"],select {
+    border-radius: 8px;
+    border: #666 solid 1px;
+}
+input::placeholder,select::placeholder,option,input[type="date"] {
+    padding-left: 8px;
+}
+option {
+    cursor: pointer;
+}
+input[type="file"] {
+    cursor: pointer;
+}
+/* Miscelaneo */
+::placeholder {
+    padding-left: 8px;
+    font-size: 1em;
+}
+footer {
+    background-color: white;
+    padding-top: 25px;
+    width: 100vw;
+    margin: 80px auto 0px auto;
+    padding: 16px 16px 0px 16px;
+    position: relative;
+    bottom: -16px;
+}
+footer section{
+    width: 80%;
+    margin: auto;
+}
+article { /*NO ES RESPONSIVE ASI*/
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+article p, b{
+    text-align: center;
+}
+article .fa-solid {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    transition: all 450ms;
+    color: #1259c3;
+}
+
+footer .fa-solid:hover {
+    color: #33c9ff;
+    cursor: pointer;
+}
+
+/* Animacion */
+
+
+/* #prof-pic-btn {
+    visibility: hidden;
+} */
+
+/* Media Queries */
+
+/* @media (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .producto b {
+        display: block;
+    } ##########LO DEJO ASI PORQUE ME PARECE INNECESARIO UN MIN-WIDTH TAN CHICO
+} */
+
+@media (min-width: 576px) {
+    .producto {
+        max-width: 48%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .producto b {
+        display: block;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    /* header */
+    header {
+        margin: auto;
+    }
+
+    /* horizontal width */
+    form{
+        max-width: 952px;
+    }
+    .control, .profile-control, .pic-control {
+        max-width: 46%;
+    }
+    .born {
+        width: 46.5%;
+        max-width: 432px;
+    }
+    .profile-container {
+        width: 100%;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .profile-control {
+        justify-content: flex-end;
+        margin: 0px;
+        align-items: center;
+        gap: 8px;
+    }
+    input[type="date"] {
+        max-width: 42%;
+    }
+    .burger-container {
+        display: none;
+    }
+    .nav-bar {
+        display: block;
+    }
+    /* Top navbar */
+
+    .top-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        width: 15em;
+    }
+    .copy-header {
+        text-align: right;
+        margin-right: 1em;
+    }
+    /* NavBar */
+    .barra-busqueda {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        /* margin: auto; */
+        padding-right: 1em;
+    }
+    .nav-bar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar li {
+        margin: 0.5em;
+    }
+    .flex-busqueda {
+        width: 30%;
+        justify-content: flex-start;
+    }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+    .nav-bar, .top-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .copy-header {
+        max-width: none;
+    }
+    .producto {
+        max-width: 23.5%;
+    }
+    /* Para que el logo y la barra entren con "compra con tarjeta..." */
+    .top-navbar {
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+    .copy-container {
+        width: 40%;
+    }
+    .flex-busqueda {
+        width: 60%;
+    }
+    footer > section {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+}
