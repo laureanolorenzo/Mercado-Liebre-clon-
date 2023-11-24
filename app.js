@@ -1,12 +1,13 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const port = process.env.PORT || 3000;
 
 let app = express();
 
 app.use(express.static(path.resolve(__dirname,'public')));
 
-app.listen(3000,console.log('Server running'));
+app.listen(port, () => console.log(`Server running on port ${port}`));
 // Para no tener que poner tantos app.get(), leo los archivos de la carpeta "views" 
 // y los paso uno x uno al app.get() con un for loop
 const htmlFiles = fs.readdirSync(path.resolve(__dirname,'views')); 
